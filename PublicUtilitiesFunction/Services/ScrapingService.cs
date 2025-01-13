@@ -1,6 +1,8 @@
 ﻿using PublicUtilitiesFunction.models;
 using PuppeteerSharp;
 using System;
+using System.IO;
+using System.IO.Compression;
 using System.Threading.Tasks;
 
 namespace PublicUtilitiesFunction.Services
@@ -18,11 +20,25 @@ namespace PublicUtilitiesFunction.Services
         {
             try
             {
-                // Descarga el navegador si es necesario
-                await new BrowserFetcher().DownloadAsync();
+                //// Descarga el navegador si es necesario
+                //await new BrowserFetcher().DownloadAsync();
+
+                var pathToChrome = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64", "chrome.exe");
+
+                if (!File.Exists(pathToChrome))
+                {
+                    throw new FileNotFoundException($"No se encontró chrome.exe en la ruta: {pathToChrome}");
+                }
+
+                var browser = await Puppeteer.LaunchAsync(new LaunchOptions
+                {
+                    Headless = true,
+                    ExecutablePath = pathToChrome
+                });
+
 
                 // Inicia el navegador
-                using var browser = await Puppeteer.LaunchAsync(new LaunchOptions { Headless = true });
+                //using var browser = await Puppeteer.LaunchAsync(new LaunchOptions { Headless = true });
                 using var page = await browser.NewPageAsync();
 
                 // Navega a la página de inicio de sesión
@@ -81,10 +97,41 @@ namespace PublicUtilitiesFunction.Services
         public async Task<Oomapasc> WebScrapingOomapascAsync(string accountNumber)
         {
             // Descargar Chromium si no está disponible
-            await new BrowserFetcher().DownloadAsync();
+            //await new BrowserFetcher().DownloadAsync();
+
+            var pathToChrome = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "Extracted", "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64", "chrome.exe");
+
+
+
+            var pathResource = Path.Combine(Directory.GetCurrentDirectory(), "Resources");
+            var zipFilePath = Path.Combine(pathResource, "Resources.zip");
+            var extractPath = Path.Combine(pathResource, "Extracted");
+
+            if (!Directory.Exists(extractPath))
+            {
+                Directory.CreateDirectory(extractPath); // Crea la carpeta de destino para extraer
+
+                if (File.Exists(zipFilePath))
+                {
+                    ZipFile.ExtractToDirectory(zipFilePath, extractPath);
+                }
+            }
+
+            //var pathToChrome = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64", "chrome.exe");
+
+            if (!File.Exists(pathToChrome))
+            {
+                throw new FileNotFoundException($"No se encontró chrome.exe en la ruta: {pathToChrome}");
+            }
+
+            var browser = await Puppeteer.LaunchAsync(new LaunchOptions
+            {
+                Headless = true,
+                ExecutablePath = pathToChrome
+            });
 
             // Lanzar el navegador en modo headless
-            using var browser = await Puppeteer.LaunchAsync(new LaunchOptions { Headless = true });
+            //using var browser = await Puppeteer.LaunchAsync(new LaunchOptions { Headless = true });
             using var page = await browser.NewPageAsync();
 
             // Navegar a la página de inicio de sesión
