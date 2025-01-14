@@ -36,9 +36,9 @@ namespace PublicUtilitiesFunction
             bool existe = false;
             if (Directory.Exists(resourcesPath)) 
             {
-                return new OkObjectResult(resourcesPath + "  " + existe + "  base " + Environment.CurrentDirectory);
+                return new OkObjectResult(resourcesPath + "  " + existe + "  base " + Directory.GetCurrentDirectory());
             }
-            return new OkObjectResult(resourcesPath + "  " + existe + "  base " + Environment.CurrentDirectory);
+            return new OkObjectResult(resourcesPath + "  " + existe + "  base " + Directory.GetCurrentDirectory());
             //if (string.IsNullOrEmpty(accountNumber))
             //{
             //    log.LogInformation("Account number is required.");
