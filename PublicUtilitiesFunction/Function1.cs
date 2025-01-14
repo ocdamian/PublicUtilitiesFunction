@@ -29,6 +29,12 @@ namespace PublicUtilitiesFunction
 
             string accountNumber = req.Query["accountNumber"];
 
+            string rootPath = AppContext.BaseDirectory;
+
+            // Construye la ruta hacia la carpeta Resources
+            string pathToChrome = Path.Combine(rootPath, "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
+            Console.WriteLine(pathToChrome);
+
             if (string.IsNullOrEmpty(accountNumber))
             {
                 log.LogInformation("Account number is required.");
