@@ -66,7 +66,6 @@ namespace PublicUtilitiesFunction
         {
 
             var isDonwloaded = await _scrapingService.DownloadChromeAsync();
-            if (!isDonwloaded) return new BadRequestObjectResult("No se descargo");
 
             return new OkObjectResult(isDonwloaded);
         }
