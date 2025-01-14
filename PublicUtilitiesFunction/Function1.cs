@@ -32,16 +32,15 @@ namespace PublicUtilitiesFunction
             string homePath = Environment.GetEnvironmentVariable("HOME");
 
             // Construir el path hacia wwwroot
-            string wwwrootPath = Path.Combine(homePath, "site", "wwwroot");
+            string wwwrootPath = Path.Combine(homePath, "site", "wwwroot", "Resources");
 
-            // Construir el path hacia la carpeta Resources
-            string resourcesPath = Path.Combine("c:","home","site","wwwroot", "Resources");
+            
             bool existe = false;
-            if (Directory.Exists(resourcesPath)) 
+            if (Directory.Exists(wwwrootPath)) 
             {
-                return new OkObjectResult(resourcesPath + "  " + existe + "  base " + wwwrootPath);
+                return new OkObjectResult(" la carpeta resurce existe " + "  " + existe + "  base " + wwwrootPath);
             }
-            return new OkObjectResult(resourcesPath + "  " + existe + "  base " + wwwrootPath);
+            return new OkObjectResult(" la carpeta resurce existe " + "  " + existe + "  base " + wwwrootPath);
             //if (string.IsNullOrEmpty(accountNumber))
             //{
             //    log.LogInformation("Account number is required.");
