@@ -32,13 +32,13 @@ namespace PublicUtilitiesFunction
             string basePath = Environment.CurrentDirectory;
 
             // Construir el path hacia la carpeta Resources
-            string resourcesPath = Path.Combine("c:","home","site","wwwroot", "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
+            string resourcesPath = Path.Combine("c:","home","site","wwwroot", "Resources");
             bool existe = false;
             if (Directory.Exists(resourcesPath)) 
             {
-                return new OkObjectResult(existe);
+                return new OkObjectResult(resourcesPath + "  " + existe + "  base " + Environment.CurrentDirectory);
             }
-            return new OkObjectResult(existe);
+            return new OkObjectResult(resourcesPath + "  " + existe + "  base " + Environment.CurrentDirectory);
             //if (string.IsNullOrEmpty(accountNumber))
             //{
             //    log.LogInformation("Account number is required.");
