@@ -3,7 +3,7 @@ trigger:
 
 variables:
   dockerRegistryServiceConnection: 'my-acr-connection'  # Asegúrate de tener este Service Connection configurado correctamente
-  imageRepository: 'functionAz'  # Nombre del repositorio donde se almacenarán las imágenes
+  imageRepository: 'repositoryfunctionAz'  # Nombre del repositorio donde se almacenarán las imágenes
   containerRegistry: 'functionaz.azurecr.io'  # Nombre de tu Azure Container Registry
   tag: '$(Build.BuildId)'  # Etiqueta única por cada build
 
