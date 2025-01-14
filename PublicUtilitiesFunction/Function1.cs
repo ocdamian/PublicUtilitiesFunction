@@ -35,11 +35,13 @@ namespace PublicUtilitiesFunction
             // Construye la ruta hacia la carpeta Resources
             string pathToChrome = Path.Combine(functionAppDirectory, "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
             
-            if (!string.IsNullOrEmpty(pathToChrome))
-            {
-                Console.WriteLine("El path " + pathToChrome  + "no existe");
-                return new BadRequestObjectResult("El path " + pathToChrome + "no existe");
-            }
+            //string pathToChrome = Path.Combine(" D:\\a\\r1\\a\\", "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
+            
+            //if (!string.IsNullOrEmpty(pathToChrome))
+            //{
+            //    Console.WriteLine("El path " + pathToChrome  + "no existe");
+            //    return new BadRequestObjectResult("El path " + pathToChrome + "no existe");
+            //}
 
             if (string.IsNullOrEmpty(accountNumber))
             {
