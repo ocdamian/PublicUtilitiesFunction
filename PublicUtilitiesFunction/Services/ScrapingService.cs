@@ -10,14 +10,30 @@ namespace PublicUtilitiesFunction.Services
 
     public interface IScrapingService
     {
-        Task<Oomapasc> WebScrapingOomapascAsync(string accountNumber, string pathChrome);
+        Task<Oomapasc> WebScrapingOomapascAsync(string accountNumber);
         Task<Cfe> WebScrapingCfecAsync(string serviceNumber);
 
-        //Task<bool> DownloadChromeAsync();
+        Task<bool> DownloadChromeAsync();
     }
 
     public class ScrapingService : IScrapingService
     {
+        public async Task<bool> DownloadChromeAsync()
+        {
+            try
+            {
+                // Descargar Chromium si no está disponible
+                await new BrowserFetcher().DownloadAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                //throw;
+                return false;
+            }
+
+
+        }
 
         //public async Task<bool> DownloadChromeAsync()
         //{
@@ -170,7 +186,7 @@ namespace PublicUtilitiesFunction.Services
             }
         }
 
-        public async Task<Oomapasc> WebScrapingOomapascAsync(string accountNumber, string pathToChrome)
+        public async Task<Oomapasc> WebScrapingOomapascAsync(string accountNumber)
         {
 
             // Descargar Chromium si no está disponible
@@ -191,16 +207,16 @@ namespace PublicUtilitiesFunction.Services
             //    //await DownloadChromeAsync();
             //}
 
-            var pathChrome = Path.Combine(pathToChrome, "chrome.exe");
+            //var pathChrome = Path.Combine(pathToChrome, "chrome.exe");
 
-            var browser = await Puppeteer.LaunchAsync(new LaunchOptions
-            {
-                Headless = true,
-                ExecutablePath = pathChrome
-            });
+            //var browser = await Puppeteer.LaunchAsync(new LaunchOptions
+            //{
+            //    Headless = true,
+            //    ExecutablePath = pathChrome
+            //});
 
             // Lanzar el navegador en modo headless
-            //using var browser = await Puppeteer.LaunchAsync(new LaunchOptions { Headless = true });
+            using var browser = await Puppeteer.LaunchAsync(new LaunchOptions { Headless = true });
             using var page = await browser.NewPageAsync();
 
             // Navegar a la página de inicio de sesión

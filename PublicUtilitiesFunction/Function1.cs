@@ -29,26 +29,13 @@ namespace PublicUtilitiesFunction
 
             string accountNumber = req.Query["accountNumber"];
 
-           
-            string functionAppDirectory = context.FunctionAppDirectory;
-
-            // Construye la ruta hacia la carpeta Resources
-            string pathToChrome = Path.Combine(functionAppDirectory, "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
-            
-            //string pathToChrome = Path.Combine(" D:\\a\\r1\\a\\", "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
-            
-            //if (!string.IsNullOrEmpty(pathToChrome))
-            //{
-            //    Console.WriteLine("El path " + pathToChrome  + "no existe");
-            //    return new BadRequestObjectResult("El path " + pathToChrome + "no existe");
-            //}
 
             if (string.IsNullOrEmpty(accountNumber))
             {
                 log.LogInformation("Account number is required.");
                 return new BadRequestObjectResult("Account number is required.");
             }
-            var oomapasc = await _scrapingService.WebScrapingOomapascAsync(accountNumber, pathToChrome);
+            var oomapasc = await _scrapingService.WebScrapingOomapascAsync(accountNumber);
 
             return new OkObjectResult(oomapasc);
         }
@@ -70,6 +57,18 @@ namespace PublicUtilitiesFunction
             var cfe = await _scrapingService.WebScrapingCfecAsync(serviceNumber);
 
             return new OkObjectResult(cfe);
+        }
+
+        [FunctionName("Chrome")]
+        public async Task<IActionResult> DownloadAsync(
+        [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
+        ILogger log)
+        {
+
+            var isDonwloaded = await _scrapingService.DownloadChromeAsync();
+            if (!isDonwloaded) return new BadRequestObjectResult("No se descargo");
+
+            return new OkObjectResult(isDonwloaded);
         }
 
 
