@@ -179,7 +179,7 @@ namespace PublicUtilitiesFunction.Services
             //string pathToChrome = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
 
             // Obtén el directorio raíz donde está desplegada la función
-            string rootPath = Environment.CurrentDirectory;
+            string rootPath = AppContext.BaseDirectory;
 
             // Construye la ruta hacia la carpeta Resources
             string pathToChrome = Path.Combine(rootPath, "Resources", "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
