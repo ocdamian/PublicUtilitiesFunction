@@ -32,7 +32,7 @@ namespace PublicUtilitiesFunction
             string basePath = Environment.CurrentDirectory;
 
             // Construir el path hacia la carpeta Resources
-            string resourcesPath = Path.Combine(basePath, "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
+            string resourcesPath = Path.Combine("c:","home","site","wwwroot", "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
 
             if (!Directory.Exists(resourcesPath)) 
             {
