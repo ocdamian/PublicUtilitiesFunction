@@ -176,7 +176,13 @@ namespace PublicUtilitiesFunction.Services
             // Descargar Chromium si no está disponible
             //await new BrowserFetcher().DownloadAsync();
 
-            string pathToChrome = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
+            //string pathToChrome = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
+
+            // Obtén el directorio raíz donde está desplegada la función
+            string rootPath = Environment.CurrentDirectory;
+
+            // Construye la ruta hacia la carpeta Resources
+            string pathToChrome = Path.Combine(rootPath, "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
 
             // Verificar si Chrome ya está extraído
             if (!Directory.Exists(pathToChrome))
