@@ -33,20 +33,20 @@ namespace PublicUtilitiesFunction
 
             // Construir el path hacia la carpeta Resources
             string resourcesPath = Path.Combine("c:","home","site","wwwroot", "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
-
-            if (!Directory.Exists(resourcesPath)) 
+            bool existe = false;
+            if (Directory.Exists(resourcesPath)) 
             {
-                return new BadRequestObjectResult("No existe el path "+   resourcesPath);
+                return new OkObjectResult(existe);
             }
+            return new OkObjectResult(existe);
+            //if (string.IsNullOrEmpty(accountNumber))
+            //{
+            //    log.LogInformation("Account number is required.");
+            //    return new BadRequestObjectResult("Account number is required.");
+            //}
+            //var oomapasc = await _scrapingService.WebScrapingOomapascAsync(accountNumber);
 
-            if (string.IsNullOrEmpty(accountNumber))
-            {
-                log.LogInformation("Account number is required.");
-                return new BadRequestObjectResult("Account number is required.");
-            }
-            var oomapasc = await _scrapingService.WebScrapingOomapascAsync(accountNumber);
-
-            return new OkObjectResult(oomapasc);
+            //return new OkObjectResult(oomapasc);
         }
 
 
