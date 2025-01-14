@@ -182,7 +182,7 @@ namespace PublicUtilitiesFunction.Services
             string rootPath = AppContext.BaseDirectory;
 
             // Construye la ruta hacia la carpeta Resources
-            string pathToChrome = Path.Combine(rootPath, "Resources", "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
+            string pathToChrome = Path.Combine(rootPath, "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
 
             // Verificar si Chrome ya está extraído
             if (!Directory.Exists(pathToChrome))
