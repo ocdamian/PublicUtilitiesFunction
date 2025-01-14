@@ -10,7 +10,7 @@ namespace PublicUtilitiesFunction.Services
 
     public interface IScrapingService
     {
-        Task<Oomapasc> WebScrapingOomapascAsync(string accountNumber);
+        Task<Oomapasc> WebScrapingOomapascAsync(string accountNumber, string pathChrome);
         Task<Cfe> WebScrapingCfecAsync(string serviceNumber);
 
         //Task<bool> DownloadChromeAsync();
@@ -170,7 +170,7 @@ namespace PublicUtilitiesFunction.Services
             }
         }
 
-        public async Task<Oomapasc> WebScrapingOomapascAsync(string accountNumber)
+        public async Task<Oomapasc> WebScrapingOomapascAsync(string accountNumber, string pathToChrome)
         {
 
             // Descargar Chromium si no está disponible
@@ -179,17 +179,17 @@ namespace PublicUtilitiesFunction.Services
             //string pathToChrome = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
 
             // Obtén el directorio raíz donde está desplegada la función
-            string rootPath = AppContext.BaseDirectory;
+            //string rootPath = AppContext.BaseDirectory;
 
             // Construye la ruta hacia la carpeta Resources
-            string pathToChrome = Path.Combine(rootPath, "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
-            Console.WriteLine(pathToChrome);
+            //string pathToChrome = Path.Combine(rootPath, "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
+            //Console.WriteLine(pathToChrome);
 
             // Verificar si Chrome ya está extraído
-            if (!Directory.Exists(pathToChrome))
-            {
-                //await DownloadChromeAsync();
-            }
+            //if (!Directory.Exists(pathToChrome))
+            //{
+            //    //await DownloadChromeAsync();
+            //}
 
             var pathChrome = Path.Combine(pathToChrome, "chrome.exe");
 
