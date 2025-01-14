@@ -115,6 +115,8 @@ namespace PublicUtilitiesFunction.Services
                 //// Descarga el navegador si es necesario
                 //await new BrowserFetcher().DownloadAsync();
 
+
+
                 var pathToChrome = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64", "chrome.exe");
 
                 if (!File.Exists(pathToChrome))

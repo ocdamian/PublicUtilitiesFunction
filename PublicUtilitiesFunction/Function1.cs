@@ -29,6 +29,15 @@ namespace PublicUtilitiesFunction
 
             string accountNumber = req.Query["accountNumber"];
 
+            string basePath = Environment.CurrentDirectory;
+
+            // Construir el path hacia la carpeta Resources
+            string resourcesPath = Path.Combine(basePath, "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
+
+            if (!Directory.Exists(resourcesPath)) 
+            {
+                return new BadRequestObjectResult("No existe el path "+   resourcesPath);
+            }
 
             if (string.IsNullOrEmpty(accountNumber))
             {
