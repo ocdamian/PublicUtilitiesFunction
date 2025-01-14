@@ -12,10 +12,86 @@ namespace PublicUtilitiesFunction.Services
     {
         Task<Oomapasc> WebScrapingOomapascAsync(string accountNumber);
         Task<Cfe> WebScrapingCfecAsync(string serviceNumber);
+
+        //Task<bool> DownloadChromeAsync();
     }
 
     public class ScrapingService : IScrapingService
     {
+
+        //public async Task<bool> DownloadChromeAsync()
+        //{
+        //    try
+        //    {
+        //        // Obtener la raíz del proyecto
+        //        string projectRoot = Path.Combine(Directory.GetCurrentDirectory(), "Resources");
+
+        //        // Ruta para guardar el archivo ZIP descargado
+        //        string localPath = Path.Combine(projectRoot, "chrome.zip");
+
+        //        // Ruta de extracción
+        //        string extractPath = Path.Combine(projectRoot, "ExtractedFiles");
+
+        //        // Ruta del binario extraído
+        //        string pathToChrome = Path.Combine(extractPath, "Chrome", "Win64-130.0.6723.69", "chrome-win64");
+
+        //        // Verificar si Chrome ya está extraído
+        //        if (Directory.Exists(pathToChrome))
+        //        {
+        //            return true; // Ya existe, no es necesario descargar
+        //        }
+
+        //        // Crear carpeta de extracción si no existe
+        //        if (!Directory.Exists(extractPath))
+        //        {
+        //            Directory.CreateDirectory(extractPath);
+        //        }
+
+        //        // Nombre del contenedor y archivo
+        //        string containerName = "binaries";
+        //        string blobName = "Resources.zip";
+
+        //        // Obtener la cadena de conexión desde las variables de entorno
+        //        string connectionString = Environment.GetEnvironmentVariable("BlobConnectionString");
+        //        if (string.IsNullOrEmpty(connectionString))
+        //        {
+        //            Console.WriteLine("Cadena de conexión no encontrada en las variables de entorno.");
+        //            return false;
+        //        }
+
+        //        // Crear el cliente del blob
+        //        var blobClient = new BlobClient(connectionString, containerName, blobName);
+
+        //        // Descargar el archivo desde Blob Storage
+        //        using (var blobStream = await blobClient.OpenReadAsync())
+        //        using (var fileStream = File.OpenWrite(localPath))
+        //        {
+        //            await blobStream.CopyToAsync(fileStream);
+        //        }
+
+        //        // Descomprimir el archivo ZIP
+        //        ZipFile.ExtractToDirectory(localPath, extractPath);
+
+        //        // Validar que la extracción fue exitosa
+        //        if (Directory.Exists(pathToChrome))
+        //        {
+        //            return true; // Descarga y extracción exitosas
+        //        }
+        //        else
+        //        {
+        //            Console.WriteLine("La extracción no generó la carpeta esperada.");
+        //            return false;
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Log del error (puedes cambiarlo a una herramienta de logging como Serilog)
+        //        Console.WriteLine($"Error al descargar o extraer Chrome: {ex.Message}");
+        //        return false; // Indica que no fue exitoso
+        //    }
+        //}
+
+
         public async Task<Cfe> WebScrapingCfecAsync(string serviceNumber)
         {
             try
@@ -96,38 +172,24 @@ namespace PublicUtilitiesFunction.Services
 
         public async Task<Oomapasc> WebScrapingOomapascAsync(string accountNumber)
         {
+
             // Descargar Chromium si no está disponible
             //await new BrowserFetcher().DownloadAsync();
 
-            var pathToChrome = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "Extracted", "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64", "chrome.exe");
+            string pathToChrome = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
 
-
-
-            var pathResource = Path.Combine(Directory.GetCurrentDirectory(), "Resources");
-            var zipFilePath = Path.Combine(pathResource, "Resources.zip");
-            var extractPath = Path.Combine(pathResource, "Extracted");
-
-            if (!Directory.Exists(extractPath))
+            // Verificar si Chrome ya está extraído
+            if (!Directory.Exists(pathToChrome))
             {
-                Directory.CreateDirectory(extractPath); // Crea la carpeta de destino para extraer
-
-                if (File.Exists(zipFilePath))
-                {
-                    ZipFile.ExtractToDirectory(zipFilePath, extractPath);
-                }
+                //await DownloadChromeAsync();
             }
 
-            //var pathToChrome = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64", "chrome.exe");
-
-            if (!File.Exists(pathToChrome))
-            {
-                throw new FileNotFoundException($"No se encontró chrome.exe en la ruta: {pathToChrome}");
-            }
+            var pathChrome = Path.Combine(pathToChrome, "chrome.exe");
 
             var browser = await Puppeteer.LaunchAsync(new LaunchOptions
             {
                 Headless = true,
-                ExecutablePath = pathToChrome
+                ExecutablePath = pathChrome
             });
 
             // Lanzar el navegador en modo headless
@@ -202,3 +264,45 @@ namespace PublicUtilitiesFunction.Services
 
     }
 }
+
+
+
+
+
+
+
+//---------------------------------------
+
+//var pathToChrome = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "Extracted", "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64", "chrome.exe");
+
+
+
+//var pathResource = Path.Combine(Directory.GetCurrentDirectory(), "Resources");
+//var zipFilePath = Path.Combine(pathResource, "Resources.zip");
+//var extractPath = Path.Combine(pathResource, "Extracted");
+
+//if (!Directory.Exists(extractPath))
+//{
+//    Directory.CreateDirectory(extractPath); // Crea la carpeta de destino para extraer
+
+//    if (File.Exists(zipFilePath))
+//    {
+//        ZipFile.ExtractToDirectory(zipFilePath, extractPath);
+//    }
+//}
+
+////var pathToChrome = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64", "chrome.exe");
+
+//if (!File.Exists(pathToChrome))
+//{
+//    throw new FileNotFoundException($"No se encontró chrome.exe en la ruta: {pathToChrome}");
+//}
+//---------------------------------------
+
+//var pathChrome = Path.Combine(pathToChrome, "chrome.exe");
+
+//var browser = await Puppeteer.LaunchAsync(new LaunchOptions
+//{
+//    Headless = true,
+//    ExecutablePath = pathChrome
+//});
