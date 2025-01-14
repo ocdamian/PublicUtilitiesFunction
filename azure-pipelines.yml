@@ -1,0 +1,40 @@
+trigger:
+- main # Cambia "main" por tu rama principal si es diferente.
+
+variables:
+  dockerRegistryServiceConnection: '<NOMBRE_DE_TU_SERVICE_CONNECTION>'
+  imageRepository: '<NOMBRE_DE_TU_REPOSITORIO_EN_ACR>'
+  containerRegistry: '<NOMBRE_DE_TU_ACR>.azurecr.io'
+  tag: '$(Build.BuildId)' # ID único por cada build
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+# Paso 1: Validar las credenciales de acceso
+- task: DockerInstaller@0
+  displayName: 'Instalar Docker CLI'
+
+# Paso 2: Iniciar sesión en el ACR
+- task: Docker@2
+  displayName: 'Iniciar sesión en ACR'
+  inputs:
+    command: 'login'
+    containerRegistry: '$(dockerRegistryServiceConnection)'
+
+# Paso 3: Construir la imagen de contenedor
+- task: Docker@2
+  displayName: 'Construir la imagen Docker'
+  inputs:
+    command: 'build'
+    Dockerfile: '**/Dockerfile'
+    tags: |
+      $(containerRegistry)/$(imageRepository):$(tag)
+
+# Paso 4: Publicar la imagen en ACR
+- task: Docker@2
+  displayName: 'Subir la imagen Docker a ACR'
+  inputs:
+    command: 'push'
+    tags: |
+      $(containerRegistry)/$(imageRepository):$(tag)
