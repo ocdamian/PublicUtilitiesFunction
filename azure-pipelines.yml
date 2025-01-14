@@ -2,10 +2,10 @@ trigger:
 - main # Cambia "main" por tu rama principal si es diferente.
 
 variables:
-  dockerRegistryServiceConnection: 'my-acr-connection'
-  imageRepository: 'functionAz'
-  containerRegistry: 'functionaz.azurecr.io'
-  tag: '$(Build.BuildId)' # ID único por cada build
+  dockerRegistryServiceConnection: 'my-acr-connection'  # Asegúrate de tener este Service Connection configurado correctamente
+  imageRepository: 'functionAz'  # Nombre del repositorio donde se almacenarán las imágenes
+  containerRegistry: 'functionaz.azurecr.io'  # Nombre de tu Azure Container Registry
+  tag: '$(Build.BuildId)'  # Etiqueta única por cada build
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -27,9 +27,9 @@ steps:
   displayName: 'Construir la imagen Docker'
   inputs:
     command: 'build'
-    Dockerfile: '**/Dockerfile'
+    Dockerfile: 'Dockerfile'  # Ajusta la ruta si el Dockerfile está en una carpeta diferente
     tags: |
-      $(containerRegistry)/$(imageRepository):$(tag)
+      $(containerRegistry)/$(imageRepository):$(tag)  # Nombre completo de la imagen
 
 # Paso 4: Publicar la imagen en ACR
 - task: Docker@2
@@ -37,4 +37,4 @@ steps:
   inputs:
     command: 'push'
     tags: |
-      $(containerRegistry)/$(imageRepository):$(tag)
+      $(containerRegistry)/$(imageRepository):$(tag)  # Subir la imagen al ACR
