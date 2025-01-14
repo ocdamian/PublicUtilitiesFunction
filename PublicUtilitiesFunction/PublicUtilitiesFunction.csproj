@@ -4,570 +4,6 @@
 		<AzureFunctionsVersion>v4</AzureFunctionsVersion>
 	</PropertyGroup>
 	<ItemGroup>
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\130.0.6723.69.manifest" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\ABOUT" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome.dll" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome.exe" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_100_percent.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_200_percent.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_elf.dll" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_proxy.exe" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_pwa_launcher.exe" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_wer.dll" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\D3DCompiler_47.dll" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\dxcompiler.dll" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\dxil.dll" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\elevation_service.exe" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\First Run" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-af.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-as.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-be.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-bg.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-bn.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-cs.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-cu.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-cy.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-da.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-de-1901.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-de-1996.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-de-ch-1901.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-el.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-en-gb.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-en-us.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-es.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-et.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-eu.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-fr.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-ga.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-gl.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-gu.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-hi.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-hr.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-hu.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-hy.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-it.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-ka.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-kn.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-la.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-lt.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-lv.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-ml.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-mn-cyrl.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-mr.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-mul-ethi.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-nb.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-nl.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-nn.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-or.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-pa.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-pt.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-ru.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-sk.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-sl.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-sq.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-sv.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-ta.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-te.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-tk.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-uk.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-und-ethi.hyb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\manifest.json" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\icudtl.dat" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\libEGL.dll" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\libGLESv2.dll" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\af.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\am.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ar.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\bg.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\bn.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ca.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\cs.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\da.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\de.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\el.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\en-GB.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\en-US.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\es-419.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\es.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\et.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\fa.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\fi.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\fil.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\fr.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\gu.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\he.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\hi.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\hr.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\hu.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\id.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\it.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ja.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\kn.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ko.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\lt.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\lv.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ml.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\mr.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ms.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\nb.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\nl.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\pl.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\pt-BR.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\pt-PT.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ro.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ru.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\sk.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\sl.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\sr.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\sv.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\sw.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ta.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\te.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\th.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\tr.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\uk.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ur.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\vi.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\zh-CN.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\zh-TW.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\MEIPreload\manifest.json" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\MEIPreload\preloaded_data.pb" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\notification_helper.exe" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\PrivacySandboxAttestationsPreloaded\manifest.json" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\PrivacySandboxAttestationsPreloaded\privacy-sandbox-attestations.dat" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\resources.pak" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\resources\accessibility\reading_mode_gdocs_helper\content.js" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\resources\accessibility\reading_mode_gdocs_helper\gdocs_script.js" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\resources\accessibility\reading_mode_gdocs_helper_manifest.json" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\setup.exe" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\v8_context_snapshot.bin" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\vk_swiftshader.dll" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\vk_swiftshader_icd.json" />
-	  <None Remove="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\vulkan-1.dll" />
-	</ItemGroup>
-	<ItemGroup>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\130.0.6723.69.manifest">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\ABOUT">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome.dll">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome.exe">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_100_percent.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_200_percent.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_elf.dll">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_proxy.exe">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_pwa_launcher.exe">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_wer.dll">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\D3DCompiler_47.dll">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\dxcompiler.dll">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\dxil.dll">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\elevation_service.exe">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\First Run">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-af.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-as.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-be.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-bg.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-bn.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-cs.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-cu.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-cy.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-da.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-de-1901.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-de-1996.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-de-ch-1901.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-el.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-en-gb.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-en-us.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-es.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-et.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-eu.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-fr.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-ga.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-gl.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-gu.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-hi.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-hr.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-hu.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-hy.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-it.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-ka.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-kn.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-la.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-lt.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-lv.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-ml.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-mn-cyrl.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-mr.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-mul-ethi.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-nb.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-nl.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-nn.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-or.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-pa.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-pt.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-ru.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-sk.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-sl.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-sq.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-sv.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-ta.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-te.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-tk.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-uk.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-und-ethi.hyb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\manifest.json">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\icudtl.dat">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\libEGL.dll">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\libGLESv2.dll">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\af.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\am.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ar.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\bg.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\bn.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ca.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\cs.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\da.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\de.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\el.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\en-GB.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\en-US.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\es-419.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\es.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\et.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\fa.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\fi.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\fil.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\fr.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\gu.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\he.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\hi.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\hr.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\hu.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\id.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\it.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ja.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\kn.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ko.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\lt.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\lv.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ml.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\mr.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ms.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\nb.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\nl.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\pl.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\pt-BR.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\pt-PT.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ro.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ru.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\sk.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\sl.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\sr.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\sv.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\sw.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ta.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\te.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\th.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\tr.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\uk.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ur.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\vi.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\zh-CN.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\zh-TW.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\MEIPreload\manifest.json">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\MEIPreload\preloaded_data.pb">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\notification_helper.exe">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\PrivacySandboxAttestationsPreloaded\manifest.json">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\PrivacySandboxAttestationsPreloaded\privacy-sandbox-attestations.dat">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\resources.pak">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\resources\accessibility\reading_mode_gdocs_helper\content.js">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\resources\accessibility\reading_mode_gdocs_helper\gdocs_script.js">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\resources\accessibility\reading_mode_gdocs_helper_manifest.json">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\setup.exe">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\v8_context_snapshot.bin">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\vk_swiftshader.dll">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\vk_swiftshader_icd.json">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\vulkan-1.dll">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	</ItemGroup>
-	<ItemGroup>
 		<PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
 		<PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.6.0" />
@@ -581,6 +17,426 @@
 		<None Update="local.settings.json">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 			<CopyToPublishDirectory>Never</CopyToPublishDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\130.0.6723.69.manifest">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\ABOUT">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome.dll">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome.exe">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_100_percent.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_200_percent.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_elf.dll">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_proxy.exe">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_pwa_launcher.exe">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\chrome_wer.dll">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\D3DCompiler_47.dll">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\dxcompiler.dll">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\dxil.dll">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\elevation_service.exe">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\First Run">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-af.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-as.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-be.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-bg.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-bn.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-cs.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-cu.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-cy.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-da.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-de-1901.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-de-1996.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-de-ch-1901.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-el.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-en-gb.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-en-us.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-es.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-et.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-eu.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-fr.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-ga.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-gl.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-gu.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-hi.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-hr.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-hu.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-hy.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-it.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-ka.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-kn.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-la.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-lt.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-lv.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-ml.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-mn-cyrl.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-mr.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-mul-ethi.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-nb.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-nl.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-nn.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-or.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-pa.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-pt.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-ru.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-sk.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-sl.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-sq.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-sv.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-ta.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-te.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-tk.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-uk.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\hyph-und-ethi.hyb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\hyphen-data\manifest.json">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\icudtl.dat">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\libEGL.dll">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\libGLESv2.dll">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\af.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\am.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ar.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\bg.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\bn.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ca.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\cs.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\da.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\de.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\el.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\en-GB.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\en-US.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\es-419.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\es.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\et.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\fa.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\fi.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\fil.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\fr.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\gu.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\he.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\hi.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\hr.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\hu.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\id.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\it.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ja.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\kn.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ko.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\lt.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\lv.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ml.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\mr.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ms.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\nb.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\nl.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\pl.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\pt-BR.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\pt-PT.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ro.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ru.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\sk.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\sl.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\sr.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\sv.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\sw.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ta.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\te.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\th.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\tr.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\uk.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\ur.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\vi.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\zh-CN.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\locales\zh-TW.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\MEIPreload\manifest.json">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\MEIPreload\preloaded_data.pb">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\notification_helper.exe">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\PrivacySandboxAttestationsPreloaded\manifest.json">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\PrivacySandboxAttestationsPreloaded\privacy-sandbox-attestations.dat">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\resources.pak">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\resources\accessibility\reading_mode_gdocs_helper\content.js">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\resources\accessibility\reading_mode_gdocs_helper\gdocs_script.js">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\resources\accessibility\reading_mode_gdocs_helper_manifest.json">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\setup.exe">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\v8_context_snapshot.bin">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\vk_swiftshader.dll">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\vk_swiftshader_icd.json">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Chrome\Win64-130.0.6723.69\chrome-win64\vulkan-1.dll">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>
 </Project>
