@@ -2,9 +2,9 @@ trigger:
 - main # Cambia "main" por tu rama principal si es diferente.
 
 variables:
-  dockerRegistryServiceConnection: '<NOMBRE_DE_TU_SERVICE_CONNECTION>'
-  imageRepository: '<NOMBRE_DE_TU_REPOSITORIO_EN_ACR>'
-  containerRegistry: '<NOMBRE_DE_TU_ACR>.azurecr.io'
+  dockerRegistryServiceConnection: 'my-acr-connection'
+  imageRepository: 'functionAz'
+  containerRegistry: 'functionaz.azurecr.io'
   tag: '$(Build.BuildId)' # ID único por cada build
 
 pool:
