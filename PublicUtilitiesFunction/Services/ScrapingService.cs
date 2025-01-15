@@ -214,9 +214,13 @@ namespace PublicUtilitiesFunction.Services
 
         public async Task<Oomapasc> WebScrapingOomapascAsync(string accountNumber)
         {
-            var env = Environment.GetEnvironmentVariable("env");
+            //var env = Environment.GetEnvironmentVariable("env");
 
-            string pathChrome = GetChromePath(env);
+            //string pathChrome = GetChromePath(env);
+
+            string homePath = Environment.GetEnvironmentVariable("HOME");
+            // Construir el path hacia wwwroot
+            string pathChrome = Path.Combine(homePath, "site", "wwwroot", "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64", "chrome.exe");
 
             var browser = await Puppeteer.LaunchAsync(new LaunchOptions
             {
