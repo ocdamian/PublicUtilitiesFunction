@@ -1,4 +1,5 @@
-﻿using PublicUtilitiesFunction.models;
+﻿using Microsoft.AspNetCore.Mvc;
+using PublicUtilitiesFunction.models;
 using PuppeteerSharp;
 using System;
 using System.IO;
@@ -188,37 +189,43 @@ namespace PublicUtilitiesFunction.Services
             }
         }
 
+
+        private string GetChromePath(string env)
+        {
+            string chromePath;
+            if (env == "prod")
+            {
+                string homePath = Environment.GetEnvironmentVariable("HOME");
+                // Construir el path hacia wwwroot
+                chromePath = Path.Combine(homePath, "site", "wwwroot", "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64", "chrome.exe");
+
+            }
+            else
+            {
+                // Obtén el directorio raíz donde está desplegada la función 
+                string rootPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+                
+                //string rootPath = Directory.();
+                chromePath = Path.Combine(rootPath, "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64", "chrome.exe");
+            }
+            if(chromePath  == null) throw new FileNotFoundException($"No se encontro la ruta ");
+            return chromePath;
+        }
+
         public async Task<Oomapasc> WebScrapingOomapascAsync(string accountNumber)
         {
+            var env = Environment.GetEnvironmentVariable("env");
 
-            // Descargar Chromium si no está disponible
-            //await new BrowserFetcher().DownloadAsync();
+            string pathChrome = GetChromePath(env);
 
-            //string pathToChrome = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
-
-            // Obtén el directorio raíz donde está desplegada la función
-            //string rootPath = AppContext.BaseDirectory;
-
-            // Construye la ruta hacia la carpeta Resources
-            //string pathToChrome = Path.Combine(rootPath, "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
-            //Console.WriteLine(pathToChrome);
-
-            // Verificar si Chrome ya está extraído
-            //if (!Directory.Exists(pathToChrome))
-            //{
-            //    //await DownloadChromeAsync();
-            //}
-
-            //var pathChrome = Path.Combine(pathToChrome, "chrome.exe");
-
-            //var browser = await Puppeteer.LaunchAsync(new LaunchOptions
-            //{
-            //    Headless = true,
-            //    ExecutablePath = pathChrome
-            //});
+            var browser = await Puppeteer.LaunchAsync(new LaunchOptions
+            {
+                Headless = true,
+                ExecutablePath = pathChrome
+            });
 
             // Lanzar el navegador en modo headless
-            using var browser = await Puppeteer.LaunchAsync(new LaunchOptions { Headless = true });
+            //using var browser = await Puppeteer.LaunchAsync(new LaunchOptions { Headless = true });
             using var page = await browser.NewPageAsync();
 
             // Navegar a la página de inicio de sesión
@@ -331,3 +338,24 @@ namespace PublicUtilitiesFunction.Services
 //    Headless = true,
 //    ExecutablePath = pathChrome
 //});
+
+
+// Descargar Chromium si no está disponible
+//await new BrowserFetcher().DownloadAsync();
+
+//string pathToChrome = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
+
+// Obtén el directorio raíz donde está desplegada la función
+//string rootPath = AppContext.BaseDirectory;
+
+// Construye la ruta hacia la carpeta Resources
+//string pathToChrome = Path.Combine(rootPath, "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64");
+//Console.WriteLine(pathToChrome);
+
+// Verificar si Chrome ya está extraído
+//if (!Directory.Exists(pathToChrome))
+//{
+//    //await DownloadChromeAsync();
+//}
+
+//var pathChrome = Path.Combine(pathToChrome, "chrome.exe");

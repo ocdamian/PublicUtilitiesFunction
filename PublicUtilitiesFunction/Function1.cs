@@ -28,27 +28,14 @@ namespace PublicUtilitiesFunction
         {
 
             string accountNumber = req.Query["accountNumber"];
-
-            string homePath = Environment.GetEnvironmentVariable("HOME");
-
-            // Construir el path hacia wwwroot
-            string wwwrootPath = Path.Combine(homePath, "site", "wwwroot", "Resources");
-
-            
-            bool existe = false;
-            if (Directory.Exists(wwwrootPath)) 
+            if (string.IsNullOrEmpty(accountNumber))
             {
-                return new OkObjectResult(" la carpeta resurce existe " + "  " + existe + "  base " + wwwrootPath);
+                log.LogInformation("Account number is required.");
+                return new BadRequestObjectResult("Account number is required.");
             }
-            return new OkObjectResult(" la carpeta resurce existe " + "  " + existe + "  base " + wwwrootPath);
-            //if (string.IsNullOrEmpty(accountNumber))
-            //{
-            //    log.LogInformation("Account number is required.");
-            //    return new BadRequestObjectResult("Account number is required.");
-            //}
-            //var oomapasc = await _scrapingService.WebScrapingOomapascAsync(accountNumber);
+            var oomapasc = await _scrapingService.WebScrapingOomapascAsync(accountNumber);
 
-            //return new OkObjectResult(oomapasc);
+            return new OkObjectResult(oomapasc);
         }
 
 
