@@ -214,22 +214,32 @@ namespace PublicUtilitiesFunction.Services
 
         public async Task<Oomapasc> WebScrapingOomapascAsync(string accountNumber)
         {
+            //// Descarga el navegador si es necesario
+            //await new BrowserFetcher().DownloadAsync();
+
+
+            var browserFetcher = new BrowserFetcher(new BrowserFetcherOptions
+            {
+                Path = Path.GetTempPath()
+            });
+            await browserFetcher.DownloadAsync();
+
             //var env = Environment.GetEnvironmentVariable("env");
 
             //string pathChrome = GetChromePath(env);
 
-            string homePath = Environment.GetEnvironmentVariable("HOME");
+            //string homePath = Environment.GetEnvironmentVariable("HOME");
             // Construir el path hacia wwwroot
-            string pathChrome = Path.Combine(homePath, "site", "wwwroot", "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64", "chrome.exe");
+            //string pathChrome = Path.Combine(homePath, "site", "wwwroot", "Resources", "Chrome", "Win64-130.0.6723.69", "chrome-win64", "chrome.exe");
 
-            var browser = await Puppeteer.LaunchAsync(new LaunchOptions
-            {
-                Headless = true,
-                ExecutablePath = pathChrome
-            });
+            //var browser = await Puppeteer.LaunchAsync(new LaunchOptions
+            //{
+            //    Headless = true,
+            //    ExecutablePath = pathChrome
+            //});
 
             // Lanzar el navegador en modo headless
-            //using var browser = await Puppeteer.LaunchAsync(new LaunchOptions { Headless = true });
+            using var browser = await Puppeteer.LaunchAsync(new LaunchOptions { Headless = true });
             using var page = await browser.NewPageAsync();
 
             // Navegar a la página de inicio de sesión
